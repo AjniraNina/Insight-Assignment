@@ -19,6 +19,13 @@
 
     <script type="text/JavaScript">
     
+    function errorMessage() {
+
+    if(document.getElementById("message").value.length == 0)
+{
+    alert("We require this information. ")
+}}
+    
         function showMessage(){
             var message = document.getElementById("message").value;
             var email = document.getElementById("email").value;
@@ -31,10 +38,14 @@
             display_phone.innerHTML= ("Phone number: ") + phone;
             display_password.innerHTML= ("Your password: ") + password;
         }
+
+
     </script>
 
+    
 
-</script>
+
+</head>
 
 <style>
     #magicdiv {
@@ -50,7 +61,8 @@
     <div class="container-fluid">
         
         <div class="row">
-                <img src="img/insight-logo.png" class="logo-style" alt="Insight logo"/>
+            <a href="index.html">
+                <img src="img/insight-logo.png" class="logo-style" alt="Insight logo"/></a>
             </div>
 
             <div class="row">
@@ -71,16 +83,15 @@
                     <p>Subscribe to be the first to get notifited when Insight launches.</p>
                     </div>
                     <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 form-style">
-        
-                    <form name="myForm" method="POST" action="">
-                        <input name="name" placeholder="Your first name (required)" id = "message" required aria-required="true" >
+                            <form name="myForm" method="POST" action="">
+                        <input name="name" onclick="errorMessage()" placeholder="Your first name (required)" id = "message" required aria-required="true" >
 
-                        <input name="lname"  placeholder="Your last name (required)" id = "lname" required  aria-required="true">
-                        <input type="email"  name="email" placeholder="Your email (required)" name="email"  id="email" required aria-required="true">
-                        <input placeholder="Your phone number (optional)" type="tel" id="phoneNum" name="phone" required aria-required="false" min="0" max="20">
-                        <input  placeholder="Choose a password (required)" name="password" id="password"  type="text" size="65"  required aria-required="true" min="0" max="20">
-                        <input type="checkbox"   name="terms-and-conditions" value="yes" class="check"><a href="#" target="_blank" required aria-required="true"> Agree to T&C's (required) </a></br>
-                        <input onclick="showMessage()" type="submit" value="submit" name="Submit" class="form-button" />
+                        <input name="lname"  onclick="errorMessage()"  placeholder="Your last name (required)" id = "lname" required  aria-required="true">
+                        <input type="email"   onclick="errorMessage()"  name="email" placeholder="Your email (required)" name="email"  id="email" required aria-required="true">
+                        <input placeholder="Your phone number (optional)" type="tel" id="phoneNum" name="phone" min="0" max="20">
+                        <input onclick="errorMessage()"  placeholder="Choose a password (required)" name="password" id="password"  type="text" size="65"  required aria-required="true" min="0" max="20">
+                        <input onclick="errorMessage()"  type="checkbox"   name="terms-and-conditions" value="yes" class="check"><a href="#" target="_blank" required aria-required="true"> Agree to T&C's (required) </a></br>
+                        <input onclick="showMessage()" type="button" value="submit" name="Submit" class="form-button" />
                 
                     </form>
                     </div>
