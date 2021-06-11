@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>
+
+    <link rel="shortcut icon" href="img/footer-logo.jpg">
+
+    <title>Insight Is Coming Soon</title>
+
+    <script type="text/JavaScript">
+    
+        function showMessage(){
+            var message = document.getElementById("message").value;
+            var email = document.getElementById("email").value;
+            var lname = document.getElementById("lname").value;
+            var phoneNum = document.getElementById("phoneNum").value;
+            var password = document.getElementById("password").value;
+            display_message.innerHTML= ("You did it! Below are the details we got: <br/> First name") + message;
+            display_email.innerHTML=("Your email: ") + email;
+            display_lname.innerHTML= ("Last name: ") + lname;
+            display_phone.innerHTML= ("Phone number: ") + phone;
+            display_password.innerHTML= ("Your password: ") + password;
+        }
+    </script>
+
+
+</script>
+
+<style>
+    #magicdiv {
+        display: none;  }
+</style>
+  
+
+
+</head>
+<body>
+
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+                <img src="img/insight-logo.png" class="logo-style" alt="Insight logo"/>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 intro-box">
+            <h1>Coming Soon...</h1>
+            <p  onClick="Magic()">Subscribe Here</p>
+            </div>
+        </div>
+
+      
+        <div id="magicdiv">
+            <div>
+        
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 form-intro">
+                    <h2> Be the first in line! </h2>
+                    <p>Subscribe to be the first to get notifited when Insight launches.</p>
+                    </div>
+                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 form-style">
+        
+                    <form name="myForm" method="POST" action="">
+                        <input name="name" placeholder="Your first name (required)" id = "message" required aria-required="true" >
+
+                        <input name="lname"  placeholder="Your last name (required)" id = "lname" required  aria-required="true">
+                        <input type="email"  name="email" placeholder="Your email (required)" name="email"  id="email" required aria-required="true">
+                        <input placeholder="Your phone number (optional)" type="tel" id="phoneNum" name="phone" required aria-required="false" min="0" max="20">
+                        <input  placeholder="Choose a password (required)" name="password" id="password"  type="text" size="65"  required aria-required="true" min="0" max="20">
+                        <input type="checkbox"   name="terms-and-conditions" value="yes" class="check"><a href="#" target="_blank" required aria-required="true"> Agree to T&C's (required) </a></br>
+                        <input onclick="showMessage()" type="submit" value="submit" name="Submit" class="form-button" />
+                
+                    </form>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 form-intro">
+                        <!-- <p><span id = "messageSubscribe">You did it! Below are the details we got:</span></p> -->
+                    <p><span id = "display_message"></span> </p>
+                    <p><span id = "display_lname"></span> </p>
+                    <p><span id = "display_email"></span> </p>
+                    <p><span id = "display_phoneNum"></span> </p>
+                    <p><span id = "display_password"></span> </p>
+
+
+        
+                    </div>
+                    </div>
+                    </div>        </div>
+    </div>
+
+<footer>
+    <div class="row footer-style">
+            <img src="img/footer-logo.jpg" class="footer-logo-style" alt="Insight logo"/>
+</div>
+</div>
+</footer>
+
+</div>
+<script>
+        function show(divId) {
+            $("#" + divId).show();
+        }  
+        function Magic() {
+            show('magicdiv');
+            $('#DOWN').text("DIV Box is visible.");
+        }
+    </script>
+
+</body>
+</html>

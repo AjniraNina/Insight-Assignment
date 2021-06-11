@@ -1,0 +1,132 @@
+body {
+    margin:1%;
+    font-family: 'Roboto', sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.logo-style{
+    margin: 5%;
+    max-width:20%;
+}
+.intro-box {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+.intro-box h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4rem;
+    color:#403b39;
+    margin-top:5%;
+    margin-bottom:2%;
+}
+.intro-box p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration-line: underline;
+    color: #AE0A46;
+}
+p:hover {
+    color:#7e0733;
+}
+.footer-style{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+    .footer-logo-style {
+        max-width: 5%;
+        margin-right: 5%;
+        padding-top: 10%;
+}
+@media only screen and (max-width: 600px) {
+    .intro-box h1{
+    font-size: 3rem;
+    }
+    .intro-box p{
+        font-size: 1rem;
+    }
+    .logo-style{
+        margin: auto;
+        padding: 8%;
+        max-width: 51%;
+    }
+.footer-logo-style {
+        max-width: 15%;
+        margin-right: 0;
+}
+.footer-style{
+    display: flex;
+    justify-content: center;
+}
+.logo-style{
+    margin: auto;
+    max-width:50%;
+}
+}
+@media only screen and (max-width: 320px) {
+    .intro-box h1{
+    font-size: 2rem;
+    text-align: center;
+    }}
+
+    .form-style{
+        max-width:400px;}
+
+      input,textarea{
+        width:100%;
+        line-height:1.5;
+        margin:10px;
+        text-align:center;
+        font-family: 'Roboto';
+        font-style: italic;
+      }
+      .form-style form .form-button{
+        background-color: #AE0A46;
+        color: white;
+        border-style: none;
+        padding: 2%;
+        margin: 2%;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        font-family: 'Roboto';
+    }
+    
+    .form-style form .form-button:hover{
+        background-color:#7e0733;;
+}
+      .check{
+        width:15%;
+        margin:4%;
+        
+      }
+      .form-style{
+          margin:auto;
+          max-width:400px;
+      }
+      .form-intro h2{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        color:#403b39;
+      }
+      .form-intro p{
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 200;
+        font-size: 1rem;
+        text-align: center;
+        color:#403b39;
+      }
+      #hidden {
+        display: none;
+    }
