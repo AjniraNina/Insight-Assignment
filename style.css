@@ -80,7 +80,7 @@ p:hover {
     .form-style{
         max-width:400px;}
 
-      input,textarea{
+        .form-style form input{
         width:100%;
         line-height:1.5;
         margin:10px;
